@@ -1,16 +1,25 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 function Landing() {
   return (
-    <div className="w-full h-screen bg-zinc-800 pt-1">
+    <div data-scroll data-scroll-speed="-.3" className="w-full h-screen bg-zinc-800 pt-1">
       <div className="textstructure mt-40 px-16">
         {["we create", "eye opening", "presentations"].map((item, index) => (
           <div className="maskers">
             <div className="w-fit flex">
-            {index === 1 && <div className=" mr-5 w-[8vw] h-[5.5vw] rounded-md relative -top-[1vw] bg-red-400"></div>}
-              <h1
-                className=" flex items-center font-['Founders_Grotesk_X'] text-[8vw] leading-[6.5vw] uppercase font-semibold">
+              {index === 1 && (
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "8vw" }}
+                  transition={{ ease: [0.76, 0, 0.24, 1], duration:1 }}
+                  className="mr-2 w-[8vw] h-[5.5vw] overflow-hidden rounded-xl relative -top-[1vw] bg-red-400"
+                >
+                  <img className="h-full w-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0NaVe-XlX_Z55HxwQCxX1s9vvEjhqPR3XNTS2UgWT4wrWAO18qRksXaP-ljGdb_s5Suc&usqp=CAU"/>
+                </motion.div>
+              )}
+              <h1 className=" flex items-center font-['Founders_Grotesk_X'] text-[8vw] leading-[6.5vw] uppercase font-semibold">
                 {item}
               </h1>
             </div>

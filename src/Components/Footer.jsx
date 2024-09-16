@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="w-full h-screen bg-zinc-900 p-14">
-      <div className='w-1/2 flex flex-col justify-between h-full font-["Founders_Grotesk_X"]  '>
+    <div className="w-full h-screen bg-zinc-900 p-14 font-['Founders_Grotesk_X'] flex">
+      <div className="w-1/2 flex flex-col justify-between h-full">
         <div className="heading">
           <h1 className="text-[8vw] font-semibold leading-none -mb-10">EYE-</h1>
           <h1 className="text-[8vw] font-semibold leading-none -mb-10">
@@ -38,6 +38,59 @@ function Footer() {
             fill="currentColor"
           ></path>
         </svg>
+      </div>
+      <div className="w-1/2">
+        <h1 className="text-[8vw] font-semibold leading-none uppercase mb-10">
+          {" "}
+          presentations
+        </h1>
+        <div className=" flex">
+          <div className="font-['Neue_Montreal'] text-center uppercase">
+            {["facebook", "instagram", "twitter", "linkedin"].map(
+              (items, index) => (
+                <a
+                  className="block mb-3 text-sm border-b-[1px] border-white"
+                  href="#"
+                >
+                  {items}
+                </a>
+              )
+            )}
+          </div>
+          <div className="font-['Neue_Montreal'] w-full leading-none uppercase mt-[15vw]">
+            {[
+              "202-1965 W 4th Ave",
+              "Vancouver, Canada",
+              "30 Chukarina St",
+              "Lviv, Ukraine",
+            ].map((items, index) => (
+              <a
+                className="block mb-3 text-sm border-b-[1px] -ml-[5vw] border-white"
+                href="#"
+              >
+                {items}
+              </a>
+            ))}
+          </div>
+          <div className="font-['Neue_Montreal'] w-full text-center ml-[30vw] uppercase mt-[10vw]">
+            {[
+              "home",
+              "services",
+              "Our work",
+              "about us",
+              "contact us",
+            ].map((items, index) => (
+              <a
+                className="block mb-3  text-sm border-b-[1px] border-white"
+                href="#"
+              >
+                {items}
+              </a>
+            ))}
+          </div>
+          
+        </div>
+        
       </div>
     </div>
   );
