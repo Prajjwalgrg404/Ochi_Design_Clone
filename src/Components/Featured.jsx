@@ -55,7 +55,7 @@ function FeaturedProjects() {
             onHoverEnd={() => handlehoverEnd(1)}
             className="cardcontainer relative w-1/2 h-[80vh]"
           >
-            <h1 className="absolute flex overflow-hidden w-full left-0 -translate-x-1/2 top-1/2 -translate-y-1/2 leading-none z-[9] text-6xl text-[#CDEA68] uppercase ">
+            <h1 className="absolute flex justify-center overflow-hidden w-full left-0 -translate-x-1/2 top-1/2 -translate-y-1/2 leading-none z-[9] text-6xl text-[#CDEA68] uppercase ">
               {"a2h & matthorn".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}
