@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'FoundersGrotesk';
+    font-family: "'Founders_Grotesk_X'";
     src: url(./font/FoundersGrotesk-Bold.woff);
 }
 @font-face {
-    font-family: 'NeueMontreal';
+    font-family: "Neue_Montreal";
     src: url(./font/NeueMontreal-Regular.woff);
 }
