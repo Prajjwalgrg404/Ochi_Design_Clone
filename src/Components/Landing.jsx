@@ -14,7 +14,7 @@ function Landing() {
                   initial={{ width: 0 }}
                   animate={{ width: "8vw" }}
                   transition={{ ease: [0.76, 0, 0.24, 1], duration:1 }}
-                  className="mr-2 w-[8vw] h-[5.5vw] overflow-hidden rounded-xl relative -top-[1vw] bg-red-400"
+                  className="mr-2 w-[8vw] h-[5.5vw] overflow-hidden rounded-xl relative -top-[1vw]"
                 >
                   <img className="h-full w-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0NaVe-XlX_Z55HxwQCxX1s9vvEjhqPR3XNTS2UgWT4wrWAO18qRksXaP-ljGdb_s5Suc&usqp=CAU"/>
                 </motion.div>
